@@ -1,0 +1,10 @@
+/* nav bar styles - Jaleel*/ 
+.nav{ background-color: var(--deep-dark); }
+#logo{position: absolute; top: 0.5rem; width:3.5rem; height: 3.5rem; margin-left: 1rem;}
+#logo:hover{transition: all 1s; transform: rotate(360deg);}
+.logo-text:hover, .links:hover{ color: var(--light-blue); }
+.logo-text{ margin-left: 5.5rem; font-size: 1.5rem !important;}
+.dt{ position: absolute; margin-left: 15rem; }
+.flex{display: flex;}
+
+.main-section{ color: var(--light-blue); }
