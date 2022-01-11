@@ -11,9 +11,35 @@ body{ background-color: var(--dark); }
 
 
 /* left side of main */
-.left-side{ position: absolute; top: 35%; left: 10rem; }
+.left-side{ position: absolute; top: 18rem; left: 10rem; }
 .m-text{ font-size: 5rem; }
 .main-phrase{ color: #fff; margin-top: -1rem; margin-bottom: 1.5rem; font-size: 2rem;}
-.start-btn{ height: 2.8rem; color: var(--light-dark); font-size: clamp(1rem, 1.5vw, 4rem); font-weight: 500;}
+.start-btn{ 
+    height: 2.8rem; 
+    color: var(--light-dark); font-size: clamp(1rem, 1.5vw, 4rem); font-weight: 500;
+    animation: bounce 1s infinite;
+}
+.start-btn:hover{ animation: none;}
 
-.right-side{} 
+.right-side{ position: absolute; top: 16rem; right: 10rem; } 
+#big-image{ position: relative; width: 25rem; height: 25rem; }
+#laptop{ position: relative; width: 5rem; height: 5rem; top: 1rem; right: -2rem; filter:  invert(100%); animation: fade 5s infinite;}
+#desktop{ position: relative; width: 5rem; height: 5rem; top: -7rem; right: -3rem; filter:  invert(100%); animation: fade 4s infinite;}
+#ipad{ position: relative; width: 5rem; height: 5rem; top: -16rem; right: -10rem; filter:  invert(100%); animation: fade 3s infinite;}
+#phone{ position: relative; width: 5rem; height: 5rem; top: -24rem; right: -19rem; filter:  invert(100%); animation: fade 2s infinite;}
+
+@keyframes bounce {
+    0% { transform: scale(1,1) translate(0px, 0px); }
+    30%{ transform: scale(1,0.8) translate(0px, 10px); }
+    75%{ transform: scale(1,1.1) translate(0px, -15px); }
+    100% { transform: scale(1,1) translate(0px, 0px);}
+}
+
+@keyframes fade {
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+}
+
+
+
