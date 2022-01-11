@@ -1,4 +1,10 @@
-/* nav bar styles - Jaleel*/ 
+/* nav bar styles - Jaleel*/
+:root{
+    --light-blue: #61dafb;
+    --deep-dark: #20232a;
+    --light-dark: #373940;
+    --dark: #282c34;
+}
 .nav{ background-color: var(--deep-dark); }
 #logo{position: absolute; top: 0.5rem; width:3.5rem; height: 3.5rem; margin-left: 1rem;}
 #logo:hover{transition: all 1s; transform: rotate(360deg);}
