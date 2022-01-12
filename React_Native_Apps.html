@@ -13,6 +13,14 @@
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <style>
+        body {
+            background-color: #282c34;
+        }
+
+        h2 {
+            color: #61dafb;
+        }
+
         #container {
             display: flex;
             gap: 40px;
@@ -32,6 +40,11 @@
 
         #skypecard {
             border-radius: 25px;
+        }
+
+        #image {
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
         }
 
         .card {
@@ -57,8 +70,8 @@
                 <ul class="right hide-on-med-and-down">
                     <li><a class="links" href="index.html">HOME</a></li>
                     <li><a class="links" href="/about_react/About_react.html">ABOUT</a></li>
-                    <li><a class="links" href="#">SYNTAX</a></li>
-                    <li><a class="links" href="#">SHOWCASE</a></li>
+                    <li><a class="links" href="syntax.html">SYNTAX</a></li>
+                    <li><a class="links" href="React_Native_Apps.html">SHOWCASE</a></li>
                 </ul>
             </div>
         </nav>
@@ -70,7 +83,7 @@
     <div id="container">
         <div id="walmartcard" class="card">
             <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator"
+                <img id="image" class="activator"
                     src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fmedia.bizj.us%2Fview%2Fimg%2F7317382%2Fwalmart-grocer1*1200xx750-423-0-58.jpg&f=1&nofb=1">
             </div>
 
@@ -91,7 +104,7 @@
 
         <div id="facebookcard" class="card">
             <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator"
+                <img id="image" class="activator"
                     src="https://play-lh.googleusercontent.com/S3sOQxRoKIp37BXGytNikUE9Fk5EWGTcKPNhcainncW6VULs0-LBrDrawFtx7EHaUhk">
             </div>
 
@@ -110,7 +123,7 @@
 
         <div id="instagramcard" class="card">
             <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator"
+                <img id="image" class="activator"
                     src="https://about.fb.com/wp-content/uploads/2019/10/IG-Glyph-Icon-hero.png?fit=2350%2C1296">
             </div>
 
@@ -129,7 +142,8 @@
 
         <div id="skypecard" class="card">
             <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="https://seehowitisdone.com/wp-content/uploads/2021/06/skype-logo.jpg">
+                <img id="image" class="activator"
+                    src="https://seehowitisdone.com/wp-content/uploads/2021/06/skype-logo.jpg">
             </div>
 
             <div class="card-content">
