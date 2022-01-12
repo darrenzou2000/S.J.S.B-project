@@ -5,49 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="style.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>React Native</title>
 </head>
 <body>
-  
+
   <div class="navbar-fixed">
-    <nav class="nav">
-      <div class="nav-wrapper"> 
-        <div class="logo-items flex">
-            <img id="logo" src="https://reactnative.dev/img/header_logo.svg" alt="">
-            <a href="#!" class="brand-logo logo-text">React Native</a>
-            <a class="dropdown-trigger dt" href="#!" data-target="dropdown1">0.66<i class="material-icons right">arrow_drop_down</i></a>
-        </div>
+        <nav class="nav">
+          <div class="nav-wrapper"> 
+            <div class="logo-items flex">
+                <img id="logo" src="https://reactnative.dev/img/header_logo.svg" alt="">
+                <a href="#!" class="brand-logo logo-text">React Native</a>
+                <a class="dropdown-trigger dt" href="#!" data-target="dropdown1">0.66<i class="material-icons right">arrow_drop_down</i></a>
+            </div>
 
-        <ul class="right hide-on-med-and-down">
-          <li><a class="links" href="index.html">HOME</a></li>
-          <li><a class="links" href="#">ABOUT</a></li>
-          <li><a class="links" href="#">SYNTAX</a></li>
-          <li><a class="links" href="#">SHOWCASE</a></li>
-        </ul>
-      </div>
-    </nav>
+            <ul class="right hide-on-med-and-down">
+              <li><a class="links" href="index.html">HOME</a></li>
+              <li><a class="links" href="#">ABOUT</a></li>
+              <li><a class="links" href="#">SYNTAX</a></li>
+              <li><a class="links" href="#">SHOWCASE</a></li>
+            </ul>
+          </div>
+        </nav>
   </div>
-
-  <main class="main-section">
-      <div class="left-side">
-        <h1 class="m-text">React Native</h1>
-        <p class="main-phrase">Simple. Functional. Reusable</p>
-        <a class="waves-effect waves-light btn light-blue lighten-3 start-btn">Let's Get Started</a>
+  
+  <div class="valign-wrapper">
+    <main class="main-section container valign-wrapper">
+      <div class="left-side ">
+          <h1 class="m-text">React Native</h1>
+          <p class="main-phrase">Simple. Functional. Reusable</p>
+          <a class="waves-effect waves-light btn light-blue lighten-3 start-btn center-align">Let's Get Started</a>
       </div>
 
       <div class="right-side">
         <div class="images">
-            <img id="phone" src="https://icons.veryicon.com/png/o/internet--web/line-style-digital-correlation/iphone-30.png" alt="">
-            <img id="ipad" src="https://icons.veryicon.com/png/o/miscellaneous/teng-rui-icon/ipad-21.png" alt="">
-            <img id="desktop" src="https://icons.veryicon.com/png/o/miscellaneous/unicons/desktop-148.png" alt="">
-            <img id="laptop" src="https://cdn-icons-png.flaticon.com/512/864/864691.png" alt="">
-            <img id="big-image" src="https://reactnative.dev/img/header_logo.svg" alt="">
+          <div class="icons">
+            <img id="phone" class='row' src="https://icons.veryicon.com/png/o/internet--web/line-style-digital-correlation/iphone-30.png" alt="">
+            <img id="ipad" class='row' src="https://icons.veryicon.com/png/o/miscellaneous/teng-rui-icon/ipad-21.png" alt="">
+            <img id="desktop" clas='row' src="https://icons.veryicon.com/png/o/miscellaneous/unicons/desktop-148.png" alt="">
+            <img id="laptop" clas='row' src="https://cdn-icons-png.flaticon.com/512/864/864691.png" alt="">
+          </div>
+          <img id="big-image" src="https://reactnative.dev/img/header_logo.svg" alt="">
         </div>
       </div>
-      
-  </main>
+    </main>
+  </div>
+    
 
 </body>
 </html>

@@ -9,24 +9,47 @@
 
 body{ background-color: var(--dark); }
 
+/* nav bar styles - Jaleel*/ 
+.nav{ background-color: var(--deep-dark); }
+#logo{position: absolute; top: 0.5rem; width:3.5rem; height: 3.5rem; margin-left: 1rem;}
+#logo:hover{transition: all 1s; transform: rotate(360deg);}
+.logo-text:hover, .links:hover{ color: var(--light-blue); }
+.logo-text{ margin-left: 5.5rem; font-size: 1.5rem !important;}
+.dt{ position: absolute; margin-left: 15rem; }
+.flex{display: flex;}
 
 /* left side of main */
-.left-side{ position: absolute; top: 18rem; left: 10rem; }
-.m-text{ font-size: 5rem; }
+.left-side{ position: absolute; top: 35%; left:clamp(5rem,10rem, 30rem); }
+
+.m-text{ font-size: 5rem; color: var(--light-blue); }
 .main-phrase{ color: #fff; margin-top: -1rem; margin-bottom: 1.5rem; font-size: 2rem;}
 .start-btn{ 
-    height: 2.8rem; 
-    color: var(--light-dark); font-size: clamp(1rem, 1.5vw, 4rem); font-weight: 500;
+    height: clamp(2.8rem, 5vh, 4.5rem); width: clamp(17rem,20vw,27rem);
+    color: var(--light-dark); font-size: clamp(1rem, 1.5vw, 4rem); font-weight: 500; 
     animation: bounce 1s infinite;
 }
 .start-btn:hover{ animation: none;}
 
-.right-side{ position: absolute; top: 16rem; right: 10rem; } 
-#big-image{ position: relative; width: 25rem; height: 25rem; }
-#laptop{ position: relative; width: 5rem; height: 5rem; top: 1rem; right: -2rem; filter:  invert(100%); animation: fade 5s infinite;}
-#desktop{ position: relative; width: 5rem; height: 5rem; top: -7rem; right: -3rem; filter:  invert(100%); animation: fade 4s infinite;}
-#ipad{ position: relative; width: 5rem; height: 5rem; top: -16rem; right: -10rem; filter:  invert(100%); animation: fade 3s infinite;}
-#phone{ position: relative; width: 5rem; height: 5rem; top: -24rem; right: -19rem; filter:  invert(100%); animation: fade 2s infinite;}
+
+.right-side{ position: absolute; 
+    /* top: 16rem; right: 10rem;  */
+    top: 15%; left: clamp(30rem, 55% ,100rem);
+    /* right: clamp(40rem,50rem, 100rem); */
+    /* right:50%; */
+} 
+.images{ 
+    position: absolute; top: clamp(8rem,50%,20rem); left:0%;
+    width: clamp(35rem,45vw,60rem); height: clamp(35rem,45vw,60rem); 
+    
+}
+.icons{ position: absolute; left: -5rem; }
+#big-image{ position: absolute; width: clamp(25rem,35vw,50rem); height: clamp(25rem,35vw,50rem); }
+#laptop{ position: absolute; width: clamp(5rem, 7vw, 10rem); height: clamp(5rem, 7vw, 10rem); top: 30rem; right: -10rem; filter:  invert(100%); animation: fade 5s infinite;}
+#desktop{ position: absolute; width: clamp(5rem, 7vw, 10rem); height: clamp(5rem, 7vw, 10rem); top: 15rem; right: -3rem; filter:  invert(100%); animation: fade 4s infinite;}
+#ipad{ position: absolute; width: clamp(5rem, 7vw, 10rem); height: clamp(5rem, 7vw, 10rem); top: -4rem; right: -11rem; filter:  invert(100%); animation: fade 3s infinite;}
+#phone{ position: absolute; width: clamp(5rem, 7vw, 10rem); height: clamp(5rem, 7vw, 10rem); top: -7rem; right: -33rem; filter:  invert(100%); animation: fade 2s infinite;}
+
+/* #laptop, #desktop, #ipad, #phone{ width: 5rem; height: 5rem; filter: invert(100%); animation: fade 3s infinite; } */
 
 @keyframes bounce {
     0% { transform: scale(1,1) translate(0px, 0px); }
