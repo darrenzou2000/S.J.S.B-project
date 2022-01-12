@@ -8,6 +8,7 @@
 }
 
 body{ background-color: var(--dark); }
+.container-wrapper{ width: 100vw; height: calc(100vh - 4rem); }
 
 /* nav bar styles - Jaleel*/ 
 .nav{ background-color: var(--deep-dark); }
@@ -19,13 +20,17 @@ body{ background-color: var(--dark); }
 .flex{display: flex;}
 
 /* left side of main */
-.left-side{ position: absolute; top: 35%; left:clamp(5rem,10rem, 30rem); }
+.left-side{ 
+    position: absolute; top: calc(50% - 9rem);
+    /* top: 35%; 
+    left:clamp(5rem,10rem, 30rem);  */
+}
 
 .m-text{ font-size: 5rem; color: var(--light-blue); }
 .main-phrase{ color: #fff; margin-top: -1rem; margin-bottom: 1.5rem; font-size: 2rem;}
 .start-btn{ 
     height: clamp(2.8rem, 5vh, 4.5rem); width: clamp(17rem,20vw,27rem);
-    color: var(--light-dark); font-size: clamp(1rem, 1.5vw, 4rem); font-weight: 500; 
+    color: var(--light-dark); font-size: clamp(2rem, 1.5vw+1rem, 4rem); font-weight: 500; 
     animation: bounce 1s infinite;
 }
 .start-btn:hover{ animation: none;}
@@ -33,7 +38,9 @@ body{ background-color: var(--dark); }
 
 .right-side{ position: absolute; 
     /* top: 16rem; right: 10rem;  */
-    top: 15%; left: clamp(30rem, 55% ,100rem);
+    top: clamp(calc(20vh - 1rem), 15%, calc(30vh + 5rem)); right: calc(40% + 3rem);
+    /* top: clamp(calc(20vh - 1rem), 15%, calc(40vh - 1rem)); right: calc(40% + 3rem); */
+    /* top: 15%; left: clamp(30rem, 55% ,100rem); */
     /* right: clamp(40rem,50rem, 100rem); */
     /* right:50%; */
 } 
@@ -44,10 +51,10 @@ body{ background-color: var(--dark); }
 }
 .icons{ position: absolute; left: -5rem; }
 #big-image{ position: absolute; width: clamp(25rem,35vw,50rem); height: clamp(25rem,35vw,50rem); }
-#laptop{ position: absolute; width: clamp(5rem, 7vw, 10rem); height: clamp(5rem, 7vw, 10rem); top: 30rem; right: -10rem; filter:  invert(100%); animation: fade 5s infinite;}
-#desktop{ position: absolute; width: clamp(5rem, 7vw, 10rem); height: clamp(5rem, 7vw, 10rem); top: 15rem; right: -3rem; filter:  invert(100%); animation: fade 4s infinite;}
-#ipad{ position: absolute; width: clamp(5rem, 7vw, 10rem); height: clamp(5rem, 7vw, 10rem); top: -4rem; right: -11rem; filter:  invert(100%); animation: fade 3s infinite;}
-#phone{ position: absolute; width: clamp(5rem, 7vw, 10rem); height: clamp(5rem, 7vw, 10rem); top: -7rem; right: -33rem; filter:  invert(100%); animation: fade 2s infinite;}
+#laptop{ position: absolute; width: clamp(5rem, 5vw, 10rem); height: clamp(5rem, 5vw, 10rem); top: 30rem; right: -10rem; filter:  invert(100%); animation: fade 5s infinite;}
+#desktop{ position: absolute; width: clamp(5rem, 5vw, 10rem); height: clamp(5rem, 5vw, 10rem); top: 15rem; right: -3rem; filter:  invert(100%); animation: fade 4s infinite;}
+#ipad{ position: absolute; width: clamp(5rem, 5vw, 10rem); height: clamp(5rem, 5vw, 10rem); top: -4rem; right: -11rem; filter:  invert(100%); animation: fade 3s infinite;}
+#phone{ position: absolute; width: clamp(5rem, 5vw, 10rem); height: clamp(5rem, 5vw, 10rem); top: -6rem; right: -33rem; filter:  invert(100%); animation: fade 2s infinite;}
 
 /* #laptop, #desktop, #ipad, #phone{ width: 5rem; height: 5rem; filter: invert(100%); animation: fade 3s infinite; } */
 
