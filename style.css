@@ -12,7 +12,7 @@ body{ background-color: var(--dark); }
 
 /* left side of main */
 .left-side{ 
-    position: absolute; top: calc(50% - 9rem);
+    position: absolute; top: calc(50% - 9rem); left:clamp(5rem,10rem, 30rem);
     /* top: 35%; 
     left:clamp(5rem,10rem, 30rem);  */
 }
